@@ -11,7 +11,7 @@ WordRouter.route('/(:word)?').get(async(req, res) => {
     const {word} = req.params 
     console.log(req.params.word)
     // res.send(word)
-
+ 
     // 사용자로부터 쿼리가 존재하는 경우
     // db.collection.find({r_word: word}) // 쿼리로 DB검색
     if(word !== "undefined" && word !== undefined){ // 데이터베이스에서 쿼리 단어를 검색

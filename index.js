@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => { //서버 내부 오류 처리
     console.error(err.stack)
     res.status(500).send("something is broken on server !")
-})
+}) 
 
 // const CONNECT_URL = 'mongodb://localhost:27017/kor_dic_db'
 const CONNECT_URL='mongodb+srv://lee:1234@cluster0.wkp9e.mongodb.net/kor_dic_db?retryWrites=true&w=majority'
