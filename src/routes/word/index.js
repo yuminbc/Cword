@@ -1,7 +1,6 @@
 const express = require('express')
 const Word = require('../../models/Word')
 const WordRouter = express.Router()
-const AllRouter = express.Router()
 
 const word = require('../../models/Word') // word 가져옴
   
